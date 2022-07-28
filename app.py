@@ -17,7 +17,7 @@ def take_inp():
         <input type="submit" />'''
 
 data = pd.read_csv('archive/Sentiment.csv')
-tokenizer = Tokenizer(num_words=2000, split=' ')
+tokenizer = Tokenizer(num_words=1000, split=' ')
 tokenizer.fit_on_texts(data['text'].values)
 
 def preProcess_data(text):
